@@ -1,20 +1,22 @@
 ---
-import { marked } from 'marked';
-import sanitizeHtml from 'sanitize-html'; 
+import { marked } from "marked";
+import sanitizeHtml from "sanitize-html";
 
-interface Props {content: string}
-const {content} = Astro.props;
+interface Props {
+  content: string;
+}
+const { content } = Astro.props;
 
 const row = await marked.parse(content, { breaks: true });
 
 const safe = sanitizeHtml(row, {
-    allowedTags: [ 'h1', 'p', 'strong', 'a', 'b', 'i', 'li', 'ul', 'ol', 'br' ],
-    allowedAttributes: {
-    'a': [ 'href', 'name' ],
-    'strong': [ 'class' ],
+  allowedTags: ["h1", "p", "strong", "a", "b", "i", "li", "ul", "ol", "br"],
+  allowedAttributes: {
+    a: ["href", "name"],
+    strong: ["class"],
   },
-  allowedSchemes: [ 'http', 'https', 'mailto', 'tel' ],
-})
+  allowedSchemes: ["http", "https", "mailto", "tel"],
+});
 ---
 
 <Fragment set:html={safe} />

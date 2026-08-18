@@ -43,9 +43,7 @@
       },
       {
         "time": "07:30",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
@@ -65,17 +63,12 @@
       },
       {
         "time": "16:30",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
         "time": "17:30",
-        "dayOfWeek": [
-          "MON",
-          "WED"
-        ],
+        "dayOfWeek": ["MON", "WED"],
         "comment": null
       },
       {
@@ -92,9 +85,7 @@
       },
       {
         "time": "08:30",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
@@ -109,24 +100,17 @@
       },
       {
         "time": "16:15",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
         "time": "17:20",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
         "time": "18:30",
-        "dayOfWeek": [
-          "MON",
-          "WED"
-        ],
+        "dayOfWeek": ["MON", "WED"],
         "comment": null
       },
       {

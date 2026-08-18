@@ -1,4 +1,4 @@
-import organizationRow from './organization.json'
+import organizationRow from "./organization.json";
 import { z } from "astro/zod";
 
 const organizationSchema = z.object({
@@ -8,6 +8,6 @@ const organizationSchema = z.object({
   workingHours: z.string(),
   directorName: z.string(),
   deputyName: z.string(),
-})
+});
 
-export const organization = organizationSchema.parse(organizationRow)
+export const organization = organizationSchema.parse(organizationRow);

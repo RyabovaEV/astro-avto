@@ -41,9 +41,7 @@
     "comments": [
       {
         "text": "по выходным дням из д.Черенцево следуют по городу: ул. Ленинградская, пр. Ленина, ул. Нефтехимиков, ул. Строителей, пр. Победы со всеми остановками;",
-        "times": [
-          "21:17"
-        ]
+        "times": ["21:17"]
       }
     ]
   },
@@ -60,9 +58,7 @@
       },
       {
         "time": "07:30",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
@@ -82,17 +78,12 @@
       },
       {
         "time": "16:30",
-        "dayOfWeek": [
-          "WED"
-        ],
+        "dayOfWeek": ["WED"],
         "comment": null
       },
       {
         "time": "17:30",
-        "dayOfWeek": [
-          "MON",
-          "WED"
-        ],
+        "dayOfWeek": ["MON", "WED"],
         "comment": null
       },
       {
@@ -109,9 +100,7 @@
       },
       {
         "time": "08:30",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
@@ -131,17 +120,12 @@
       },
       {
         "time": "17:20",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
         "time": "18:30",
-        "dayOfWeek": [
-          "MON",
-          "WED"
-        ],
+        "dayOfWeek": ["MON", "WED"],
         "comment": null
       },
       {
@@ -153,9 +137,7 @@
     "comments": [
       {
         "text": "по рабочим дням кроме пятницы п.Глажево следуют по городу: ул. Ленинградская, пр. Ленина, ул. Нефтехимиков, ул. Строителей, пр. Победы со всеми остановками;",
-        "times": [
-          "21:07"
-        ]
+        "times": ["21:07"]
       }
     ]
   },
@@ -241,15 +223,7 @@
     "comments": [
       {
         "text": "на д.Кусино отправляются от Привокзальной площади с\nзаездом на Садоводство – 2 (туда и обратно); в обратном направлении следуют по пр. Победы со всеми\nостановками;",
-        "times": [
-          "06:05",
-          "08:40",
-          "12:00",
-          "13:55",
-          "16:00",
-          "18:00",
-          "20:30"
-        ]
+        "times": ["06:05", "08:40", "12:00", "13:55", "16:00", "18:00", "20:30"]
       }
     ]
   },
@@ -484,9 +458,7 @@
     "comments": [
       {
         "text": "на д.Городище следует по городу: пр. Победы, ул. Строителей, ул. Нефтехимиков, пр. Ленина,\nпр.Победы со всеми остановками с заездом в д.Чирково (туда еж.; обратно вых.д.); в обратном направлении\nследуют по пр. Победы со всеми остановками;",
-        "times": [
-          "07:30"
-        ]
+        "times": ["07:30"]
       }
     ]
   },
@@ -503,9 +475,7 @@
       },
       {
         "time": "10:35",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
@@ -520,11 +490,7 @@
       },
       {
         "time": "20:10",
-        "dayOfWeek": [
-          "FRI",
-          "SAT",
-          "SUN"
-        ],
+        "dayOfWeek": ["FRI", "SAT", "SUN"],
         "comment": null
       }
     ],
@@ -536,9 +502,7 @@
       },
       {
         "time": "11:10",
-        "dayOfWeek": [
-          "SAT"
-        ],
+        "dayOfWeek": ["SAT"],
         "comment": null
       },
       {
@@ -553,11 +517,7 @@
       },
       {
         "time": "20:45",
-        "dayOfWeek": [
-          "FRI",
-          "SAT",
-          "SUN"
-        ],
+        "dayOfWeek": ["FRI", "SAT", "SUN"],
         "comment": null
       }
     ],
@@ -707,18 +667,14 @@
     "departuresFromStart": [
       {
         "time": "17:35",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       }
     ],
     "departuresFromEnd": [
       {
         "time": "19:40",
-        "dayOfWeek": [
-          "SUN"
-        ],
+        "dayOfWeek": ["SUN"],
         "comment": null
       }
     ],
@@ -771,11 +727,7 @@
     "comments": [
       {
         "text": "на д.Чирково следуют по городу: пр. Победы, ул. Строителей, ул. Нефтехимиков,\nпр.Ленина со всеми остановками (туда и обратно):",
-        "times": [
-          "09:40",
-          "10:50",
-          "17:00"
-        ]
+        "times": ["09:40", "10:50", "17:00"]
       }
     ]
   },
@@ -841,9 +793,7 @@
     "comments": [
       {
         "text": "р.д. из д. Дубняги заезжают в д. Чирково; в обратном направлении следуют по пр. Победы со\nвсеми остановками;",
-        "times": [
-          "07:00"
-        ]
+        "times": ["07:00"]
       },
       {
         "text": "все рейсы на г. Кириши следуют от площади по улицам: Советская, ул. Октябрьская, ул.Новая,\nс заездом к больнице и далее на г. Кириши, по прибытию в г.Кириши, следуют по пр. Героев, пр. Ленина, пр. Победы\nсо всеми остановками;",
@@ -859,46 +809,34 @@
     "departuresFromStart": [
       {
         "time": "08:10",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       },
       {
         "time": "17:30",
-        "dayOfWeek": [
-          "SUN"
-        ],
+        "dayOfWeek": ["SUN"],
         "comment": null
       },
       {
         "time": "18:30",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       }
     ],
     "departuresFromEnd": [
       {
         "time": "09:30",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       },
       {
         "time": "18:40",
-        "dayOfWeek": [
-          "SUN"
-        ],
+        "dayOfWeek": ["SUN"],
         "comment": null
       },
       {
         "time": "19:50",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       }
     ],
@@ -912,73 +850,51 @@
     "departuresFromStart": [
       {
         "time": "08:10",
-        "dayOfWeek": [
-          "TUE",
-          "THU"
-        ],
+        "dayOfWeek": ["TUE", "THU"],
         "comment": null
       },
       {
         "time": "12:50",
-        "dayOfWeek": [
-          "SUN"
-        ],
+        "dayOfWeek": ["SUN"],
         "comment": null
       },
       {
         "time": "17:30",
-        "dayOfWeek": [
-          "TUE",
-          "THU"
-        ],
+        "dayOfWeek": ["TUE", "THU"],
         "comment": null
       },
       {
         "time": "20:15",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       }
     ],
     "departuresFromEnd": [
       {
         "time": "09:40",
-        "dayOfWeek": [
-          "TUE",
-          "THU"
-        ],
+        "dayOfWeek": ["TUE", "THU"],
         "comment": null
       },
       {
         "time": "14:18",
-        "dayOfWeek": [
-          "SUN"
-        ],
+        "dayOfWeek": ["SUN"],
         "comment": null
       },
       {
         "time": "19:00",
-        "dayOfWeek": [
-          "TUE",
-          "THU"
-        ],
+        "dayOfWeek": ["TUE", "THU"],
         "comment": null
       },
       {
         "time": "21:43",
-        "dayOfWeek": [
-          "FRI"
-        ],
+        "dayOfWeek": ["FRI"],
         "comment": null
       }
     ],
     "comments": [
       {
         "text": "по пятницам из д.Гороховец следуют по городу: ул. Ленинградская, пр. Ленина, ул. Нефтехимиков, ул. Строителей, пр. Победы со всеми остановками;",
-        "times": [
-          "21:43"
-        ]
+        "times": ["21:43"]
       }
     ]
   },
@@ -1353,38 +1269,24 @@
     "departuresFromStart": [
       {
         "time": "06:55",
-        "dayOfWeek": [
-          "WED",
-          "SAT"
-        ],
+        "dayOfWeek": ["WED", "SAT"],
         "comment": "заезд в Авдетово"
       },
       {
         "time": "15:00",
-        "dayOfWeek": [
-          "WED",
-          "FRI",
-          "SUN"
-        ],
+        "dayOfWeek": ["WED", "FRI", "SUN"],
         "comment": "заезд в Авдетово , д. Могилёво."
       }
     ],
     "departuresFromEnd": [
       {
         "time": "08:02",
-        "dayOfWeek": [
-          "WED",
-          "SAT"
-        ],
+        "dayOfWeek": ["WED", "SAT"],
         "comment": "заезд в д .Авдетово, д .Могилёво. *"
       },
       {
         "time": "15:00",
-        "dayOfWeek": [
-          "WED",
-          "FRI",
-          "SUN"
-        ],
+        "dayOfWeek": ["WED", "FRI", "SUN"],
         "comment": "заезд в Авдетово"
       }
     ],
@@ -1398,42 +1300,24 @@
     "departuresFromStart": [
       {
         "time": "08:20",
-        "dayOfWeek": [
-          "TUE",
-          "THU",
-          "SAT"
-        ],
+        "dayOfWeek": ["TUE", "THU", "SAT"],
         "comment": "заезд в д.Змеева Новика"
       },
       {
         "time": "18:00",
-        "dayOfWeek": [
-          "TUE",
-          "THU",
-          "SAT",
-          "SUN"
-        ],
+        "dayOfWeek": ["TUE", "THU", "SAT", "SUN"],
         "comment": "заезд в д. Змеева Новинка."
       }
     ],
     "departuresFromEnd": [
       {
         "time": "09:13",
-        "dayOfWeek": [
-          "TUE",
-          "THU",
-          "SAT"
-        ],
+        "dayOfWeek": ["TUE", "THU", "SAT"],
         "comment": "*"
       },
       {
         "time": "18:50",
-        "dayOfWeek": [
-          "TUE",
-          "THU",
-          "SAT",
-          "SUN"
-        ],
+        "dayOfWeek": ["TUE", "THU", "SAT", "SUN"],
         "comment": null
       }
     ],
@@ -1478,68 +1362,41 @@
     "departuresFromStart": [
       {
         "time": "06:55",
-        "dayOfWeek": [
-          "TUE",
-          "THU",
-          "FRI",
-          "SUN"
-        ],
+        "dayOfWeek": ["TUE", "THU", "FRI", "SUN"],
         "comment": null
       },
       {
         "time": "08:20",
-        "dayOfWeek": [
-          "MON"
-        ],
+        "dayOfWeek": ["MON"],
         "comment": null
       },
       {
         "time": "15:00",
-        "dayOfWeek": [
-          "MON",
-          "TUE",
-          "THU",
-          "SAT"
-        ],
+        "dayOfWeek": ["MON", "TUE", "THU", "SAT"],
         "comment": "Могилево (Солоницы вт, чт.)"
       }
     ],
     "departuresFromEnd": [
       {
         "time": "07:37",
-        "dayOfWeek": [
-          "TUE",
-          "THU",
-          "FRI",
-          "SUN"
-        ],
+        "dayOfWeek": ["TUE", "THU", "FRI", "SUN"],
         "comment": "Могилево (Солоницы вт, чт.) *"
       },
       {
         "time": "09:10",
-        "dayOfWeek": [
-          "MON"
-        ],
+        "dayOfWeek": ["MON"],
         "comment": "*"
       },
       {
         "time": "15:35",
-        "dayOfWeek": [
-          "MON",
-          "TUE",
-          "THU",
-          "SAT"
-        ],
+        "dayOfWeek": ["MON", "TUE", "THU", "SAT"],
         "comment": null
       }
     ],
     "comments": [
       {
         "text": "в п. Будогощь следуют с заездом к больнице.",
-        "times": [
-          "07:37",
-          "09:10"
-        ]
+        "times": ["07:37", "09:10"]
       }
     ]
   },
@@ -1551,18 +1408,12 @@
     "departuresFromStart": [
       {
         "time": "06:55",
-        "dayOfWeek": [
-          "MON"
-        ],
+        "dayOfWeek": ["MON"],
         "comment": null
       },
       {
         "time": "08:20",
-        "dayOfWeek": [
-          "WED",
-          "FRI",
-          "SUN"
-        ],
+        "dayOfWeek": ["WED", "FRI", "SUN"],
         "comment": null
       },
       {
@@ -1574,18 +1425,12 @@
     "departuresFromEnd": [
       {
         "time": "07:38",
-        "dayOfWeek": [
-          "MON"
-        ],
+        "dayOfWeek": ["MON"],
         "comment": "*"
       },
       {
         "time": "09:10",
-        "dayOfWeek": [
-          "WED",
-          "FRI",
-          "SUN"
-        ],
+        "dayOfWeek": ["WED", "FRI", "SUN"],
         "comment": "*"
       },
       {
