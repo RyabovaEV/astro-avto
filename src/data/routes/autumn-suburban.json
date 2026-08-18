@@ -1,0 +1,140 @@
+[
+  {
+    "id": "47",
+    "number": "251",
+    "name": "Кириши – Черенцево",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:15",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "12:50",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:17",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "14:00",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "48",
+    "number": "251а",
+    "name": "Кириши – Глажево",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "05:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:30",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:50",
+        "dayOfWeek": [],
+        "comment": "вых.д. кр.вс."
+      },
+      {
+        "time": "15:30",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "16:30",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "17:30",
+        "dayOfWeek": [
+          "MON",
+          "WED"
+        ],
+        "comment": null
+      },
+      {
+        "time": "20:15",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "06:35",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:30",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "10:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:45",
+        "dayOfWeek": [],
+        "comment": "вых.д. кр.вс."
+      },
+      {
+        "time": "16:15",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "17:20",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "18:30",
+        "dayOfWeek": [
+          "MON",
+          "WED"
+        ],
+        "comment": null
+      },
+      {
+        "time": "21:07",
+        "dayOfWeek": [],
+        "comment": "*"
+      }
+    ],
+    "comments": []
+  }
+]

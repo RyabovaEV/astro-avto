@@ -1,0 +1,1599 @@
+[
+  {
+    "id": "3",
+    "number": "251",
+    "name": "Кириши – Черенцево",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:15",
+        "dayOfWeek": [],
+        "comment": "р.д. *"
+      },
+      {
+        "time": "12:50",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "20:15",
+        "dayOfWeek": [],
+        "comment": "вых.д."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:17",
+        "dayOfWeek": [],
+        "comment": "р.д. *"
+      },
+      {
+        "time": "14:00",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "21:17",
+        "dayOfWeek": [],
+        "comment": "вых.д. *"
+      }
+    ],
+    "comments": [
+      {
+        "text": "по выходным дням из д.Черенцево следуют по городу: ул. Ленинградская, пр. Ленина, ул. Нефтехимиков, ул. Строителей, пр. Победы со всеми остановками;",
+        "times": [
+          "21:17"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "number": "251а",
+    "name": "Кириши – Глажево",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "05:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:30",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:50",
+        "dayOfWeek": [],
+        "comment": "вых.д. кр.вс."
+      },
+      {
+        "time": "15:30",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "16:30",
+        "dayOfWeek": [
+          "WED"
+        ],
+        "comment": null
+      },
+      {
+        "time": "17:30",
+        "dayOfWeek": [
+          "MON",
+          "WED"
+        ],
+        "comment": null
+      },
+      {
+        "time": "20:15",
+        "dayOfWeek": [],
+        "comment": "р.д. кр.пт."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "06:35",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:30",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "10:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:45",
+        "dayOfWeek": [],
+        "comment": "вых.д.кр.вс."
+      },
+      {
+        "time": "16:15",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "17:20",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "18:30",
+        "dayOfWeek": [
+          "MON",
+          "WED"
+        ],
+        "comment": null
+      },
+      {
+        "time": "21:07",
+        "dayOfWeek": [],
+        "comment": "р.д. кр.пт. *"
+      }
+    ],
+    "comments": [
+      {
+        "text": "по рабочим дням кроме пятницы п.Глажево следуют по городу: ул. Ленинградская, пр. Ленина, ул. Нефтехимиков, ул. Строителей, пр. Победы со всеми остановками;",
+        "times": [
+          "21:07"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "number": "253а*",
+    "name": "Кириши – Садоводство-2 – Кусино",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:05",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:55",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "20:30",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "06:35",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:21",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:35",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "21:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": [
+      {
+        "text": "на д.Кусино отправляются от Привокзальной площади с\nзаездом на Садоводство – 2 (туда и обратно); в обратном направлении следуют по пр. Победы со всеми\nостановками;",
+        "times": [
+          "06:05",
+          "08:40",
+          "12:00",
+          "13:55",
+          "16:00",
+          "18:00",
+          "20:30"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "number": "252",
+    "name": "Кириши – Садоводство-2 Рабочие дни",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "08:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:25",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "8",
+    "number": "252",
+    "name": "Кириши – Садоводство-2 Выходные дни",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "07:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:25",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "9",
+    "number": "252а",
+    "name": "От пл. Бровко по пр.Ленина-Садоводство-2 Выходные дни",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "09:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:30",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "10:15",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:55",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "10",
+    "number": "254",
+    "name": "Кириши – Городище",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "14:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:55",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:30",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "15:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:40",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "11",
+    "number": "254г",
+    "name": "Кириши – Чирково –Городище",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:30",
+        "dayOfWeek": [],
+        "comment": "*"
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:30",
+        "dayOfWeek": [],
+        "comment": "вых.д."
+      }
+    ],
+    "comments": [
+      {
+        "text": "на д.Городище следует по городу: пр. Победы, ул. Строителей, ул. Нефтехимиков, пр. Ленина,\nпр.Победы со всеми остановками с заездом в д.Чирково (туда еж.; обратно вых.д.); в обратном направлении\nследуют по пр. Победы со всеми остановками;",
+        "times": [
+          "07:30"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "number": "254а",
+    "name": "Кириши – Пчева",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:20",
+        "dayOfWeek": [],
+        "comment": "р.д"
+      },
+      {
+        "time": "10:35",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "11:25",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "16:10",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "20:10",
+        "dayOfWeek": [
+          "FRI",
+          "SAT",
+          "SUN"
+        ],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "06:50",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "11:10",
+        "dayOfWeek": [
+          "SAT"
+        ],
+        "comment": null
+      },
+      {
+        "time": "12:00",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "16:45",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "20:45",
+        "dayOfWeek": [
+          "FRI",
+          "SAT",
+          "SUN"
+        ],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "13",
+    "number": "255*",
+    "name": "Кириши – Будогощь",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:05",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "06:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:45",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:55",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:35",
+        "dayOfWeek": [],
+        "comment": "кр.пт."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "07:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:15",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:55",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:40",
+        "dayOfWeek": [],
+        "comment": "кр.вс."
+      }
+    ],
+    "comments": [
+      {
+        "text": "все рейсы на г. Кириши следуют от площади по улицам: Советская, ул. Октябрьская, ул.Новая,\nс заездом к больнице и далее на г. Кириши, по прибытию в г.Кириши, следуют по пр. Героев, пр. Ленина, пр. Победы\nсо всеми остановками;",
+        "times": []
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "number": "255б*",
+    "name": "Кириши – Будогощь",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": []
+  },
+  {
+    "id": "15",
+    "number": "255*а",
+    "name": "Кириши – Борутино –Будогощь",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "17:35",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "19:40",
+        "dayOfWeek": [
+          "SUN"
+        ],
+        "comment": null
+      }
+    ],
+    "comments": [
+      {
+        "text": "все рейсы на г. Кириши следуют от площади по улицам: Советская, ул. Октябрьская, ул.Новая,\nс заездом к больнице и далее на г. Кириши, по прибытию в г.Кириши, следуют по пр. Героев, пр. Ленина, пр. Победы\nсо всеми остановками;",
+        "times": []
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "number": "256*",
+    "name": "Кириши – Чирково",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "09:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "10:13",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:23",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:33",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": [
+      {
+        "text": "на д.Чирково следуют по городу: пр. Победы, ул. Строителей, ул. Нефтехимиков,\nпр.Ленина со всеми остановками (туда и обратно):",
+        "times": [
+          "09:40",
+          "10:50",
+          "17:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "number": "257, 257а",
+    "name": "Кириши – Дубняги",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:00",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "10:35",
+        "dayOfWeek": [],
+        "comment": "вых.д. Дуняково сб."
+      },
+      {
+        "time": "13:50",
+        "dayOfWeek": [],
+        "comment": "р.д. Дуняково чт."
+      },
+      {
+        "time": "18:25",
+        "dayOfWeek": [],
+        "comment": "Дуняково чт."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "11:45",
+        "dayOfWeek": [],
+        "comment": "вых.д."
+      },
+      {
+        "time": "15:00",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "19:20",
+        "dayOfWeek": [],
+        "comment": "Дуняково вс."
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "18",
+    "number": "257б*",
+    "name": "Кириши – Чирково –Дубняги",
+    "isCircular": false,
+    "departuresFromStart": [],
+    "departuresFromEnd": [
+      {
+        "time": "07:00",
+        "dayOfWeek": [],
+        "comment": "р.д. Дуняково чт."
+      }
+    ],
+    "comments": [
+      {
+        "text": "р.д. из д. Дубняги заезжают в д. Чирково; в обратном направлении следуют по пр. Победы со\nвсеми остановками;",
+        "times": [
+          "07:00"
+        ]
+      },
+      {
+        "text": "все рейсы на г. Кириши следуют от площади по улицам: Советская, ул. Октябрьская, ул.Новая,\nс заездом к больнице и далее на г. Кириши, по прибытию в г.Кириши, следуют по пр. Героев, пр. Ленина, пр. Победы\nсо всеми остановками;",
+        "times": []
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "number": "258",
+    "name": "Кириши – Мемино",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "08:10",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      },
+      {
+        "time": "17:30",
+        "dayOfWeek": [
+          "SUN"
+        ],
+        "comment": null
+      },
+      {
+        "time": "18:30",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "09:30",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      },
+      {
+        "time": "18:40",
+        "dayOfWeek": [
+          "SUN"
+        ],
+        "comment": null
+      },
+      {
+        "time": "19:50",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "20",
+    "number": "259",
+    "name": "Кириши – Гороховец",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "08:10",
+        "dayOfWeek": [
+          "TUE",
+          "THU"
+        ],
+        "comment": null
+      },
+      {
+        "time": "12:50",
+        "dayOfWeek": [
+          "SUN"
+        ],
+        "comment": null
+      },
+      {
+        "time": "17:30",
+        "dayOfWeek": [
+          "TUE",
+          "THU"
+        ],
+        "comment": null
+      },
+      {
+        "time": "20:15",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "09:40",
+        "dayOfWeek": [
+          "TUE",
+          "THU"
+        ],
+        "comment": null
+      },
+      {
+        "time": "14:18",
+        "dayOfWeek": [
+          "SUN"
+        ],
+        "comment": null
+      },
+      {
+        "time": "19:00",
+        "dayOfWeek": [
+          "TUE",
+          "THU"
+        ],
+        "comment": null
+      },
+      {
+        "time": "21:43",
+        "dayOfWeek": [
+          "FRI"
+        ],
+        "comment": null
+      }
+    ],
+    "comments": [
+      {
+        "text": "по пятницам из д.Гороховец следуют по городу: ул. Ленинградская, пр. Ленина, ул. Нефтехимиков, ул. Строителей, пр. Победы со всеми остановками;",
+        "times": [
+          "21:43"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "number": "260",
+    "name": "Кириши – Садоводство-3 Рабочие дни",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "20:30",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "06:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "21:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "22",
+    "number": "260",
+    "name": "Кириши – Садоводство-3 Выходные дни",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "20:30",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "06:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "21:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "23",
+    "number": "260а",
+    "name": "От пл. Бровко по пр.Ленина–Садоводство 3 Выходные дни",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:30",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "24",
+    "number": "240",
+    "name": "Будогощь",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "08:50",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:55",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": []
+  },
+  {
+    "id": "25",
+    "number": "241, 241а",
+    "name": "Будогощь – Крапивно",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:55",
+        "dayOfWeek": [
+          "WED",
+          "SAT"
+        ],
+        "comment": "заезд в Авдетово"
+      },
+      {
+        "time": "15:00",
+        "dayOfWeek": [
+          "WED",
+          "FRI",
+          "SUN"
+        ],
+        "comment": "заезд в Авдетово , д. Могилёво."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "08:02",
+        "dayOfWeek": [
+          "WED",
+          "SAT"
+        ],
+        "comment": "заезд в д .Авдетово, д .Могилёво. *"
+      },
+      {
+        "time": "15:00",
+        "dayOfWeek": [
+          "WED",
+          "FRI",
+          "SUN"
+        ],
+        "comment": "заезд в Авдетово"
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "26",
+    "number": "244а",
+    "name": "Будогощь – Смолино",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "08:20",
+        "dayOfWeek": [
+          "TUE",
+          "THU",
+          "SAT"
+        ],
+        "comment": "заезд в д.Змеева Новика"
+      },
+      {
+        "time": "18:00",
+        "dayOfWeek": [
+          "TUE",
+          "THU",
+          "SAT",
+          "SUN"
+        ],
+        "comment": "заезд в д. Змеева Новинка."
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "09:13",
+        "dayOfWeek": [
+          "TUE",
+          "THU",
+          "SAT"
+        ],
+        "comment": "*"
+      },
+      {
+        "time": "18:50",
+        "dayOfWeek": [
+          "TUE",
+          "THU",
+          "SAT",
+          "SUN"
+        ],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "27",
+    "number": "245",
+    "name": "Будогощь – Клинково",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "07:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:50",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "07:50",
+        "dayOfWeek": [],
+        "comment": "*"
+      },
+      {
+        "time": "17:20",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "29",
+    "number": "247",
+    "name": "Будогощь – Луг",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:55",
+        "dayOfWeek": [
+          "TUE",
+          "THU",
+          "FRI",
+          "SUN"
+        ],
+        "comment": null
+      },
+      {
+        "time": "08:20",
+        "dayOfWeek": [
+          "MON"
+        ],
+        "comment": null
+      },
+      {
+        "time": "15:00",
+        "dayOfWeek": [
+          "MON",
+          "TUE",
+          "THU",
+          "SAT"
+        ],
+        "comment": "Могилево (Солоницы вт, чт.)"
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "07:37",
+        "dayOfWeek": [
+          "TUE",
+          "THU",
+          "FRI",
+          "SUN"
+        ],
+        "comment": "Могилево (Солоницы вт, чт.) *"
+      },
+      {
+        "time": "09:10",
+        "dayOfWeek": [
+          "MON"
+        ],
+        "comment": "*"
+      },
+      {
+        "time": "15:35",
+        "dayOfWeek": [
+          "MON",
+          "TUE",
+          "THU",
+          "SAT"
+        ],
+        "comment": null
+      }
+    ],
+    "comments": [
+      {
+        "text": "в п. Будогощь следуют с заездом к больнице.",
+        "times": [
+          "07:37",
+          "09:10"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "number": "246",
+    "name": "Будогощь – Половинник",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "06:55",
+        "dayOfWeek": [
+          "MON"
+        ],
+        "comment": null
+      },
+      {
+        "time": "08:20",
+        "dayOfWeek": [
+          "WED",
+          "FRI",
+          "SUN"
+        ],
+        "comment": null
+      },
+      {
+        "time": "15:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "07:38",
+        "dayOfWeek": [
+          "MON"
+        ],
+        "comment": "*"
+      },
+      {
+        "time": "09:10",
+        "dayOfWeek": [
+          "WED",
+          "FRI",
+          "SUN"
+        ],
+        "comment": "*"
+      },
+      {
+        "time": "15:50",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  }
+]

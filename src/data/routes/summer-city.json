@@ -1,0 +1,395 @@
+[
+  {
+    "id": "30",
+    "number": "3а",
+    "name": "М-н «Восточный – ПМК Кладбище «Мерятино»",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "09:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:15",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "09:45",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:35",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:25",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "31",
+    "number": "7",
+    "name": "Проспект Победы – Черная речка",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "12:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "12:35",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "32",
+    "number": "7б",
+    "name": "Проспект Победы –Заводоуправление",
+    "isCircular": false,
+    "departuresFromStart": [
+      {
+        "time": "08:40",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:10",
+        "dayOfWeek": [],
+        "comment": "р.д"
+      },
+      {
+        "time": "15:10",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [
+      {
+        "time": "09:05",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:35",
+        "dayOfWeek": [],
+        "comment": "р.д."
+      },
+      {
+        "time": "15:35",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "comments": []
+  },
+  {
+    "id": "33",
+    "number": "6",
+    "name": "Вокзал – Вокзал",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "05:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "06:02",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "06:35",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:08",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:06",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:38",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:57",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:06",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:38",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:48",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:55",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:33",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "20:00",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": []
+  },
+  {
+    "id": "34",
+    "number": "6л",
+    "name": "Вокзал – Вокзал",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "06:55",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "07:48",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "08:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:15",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "17:15",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "20:30",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "21:30",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": []
+  },
+  {
+    "id": "35",
+    "number": "9-1",
+    "name": "Вокзал – ОКБ – Вокзал",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "07:34",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": [
+      {
+        "text": "следуют по городу с заездом на ОКБ.",
+        "times": []
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "number": "9-2",
+    "name": "Вокзал – ОКБ – Вокзал",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "17:52",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": [
+      {
+        "text": "следуют по пр. Победы с заездом на ОКБ, далее по городу",
+        "times": []
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "number": "9",
+    "name": "Вокзал – Вокзал",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "08:58",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "09:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "10:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "11:28",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "12:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "13:10",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:15",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:20",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:25",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "18:00",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:45",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": []
+  },
+  {
+    "id": "38",
+    "number": "9л",
+    "name": "Вокзал – Вокзал",
+    "isCircular": true,
+    "departuresFromStart": [
+      {
+        "time": "13:28",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "14:53",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "15:38",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "16:48",
+        "dayOfWeek": [],
+        "comment": null
+      },
+      {
+        "time": "19:03",
+        "dayOfWeek": [],
+        "comment": null
+      }
+    ],
+    "departuresFromEnd": [],
+    "comments": []
+  }
+]
