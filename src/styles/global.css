@@ -1,1 +1,61 @@
 @import "tailwindcss";
+
+:root {
+  --background: theme('colors.white');
+  --foreground: theme('colors.slate.900');
+  --card: theme('colors.white');
+  --card-foreground: theme('colors.slate.900');
+  --popover: theme('colors.white');
+  --popover-foreground: theme('colors.slate.900');
+  --primary: theme('colors.blue.600');
+  --primary-foreground: theme('colors.white');
+  --secondary: theme('colors.blue.100');
+  --secondary-foreground: theme('colors.blue.900');
+  --muted: theme('colors.blue.50');
+  --muted-foreground: theme('colors.slate.400');
+  --accent: theme('colors.blue.50');
+  --accent-foreground: theme('colors.blue.900');
+  --destructive: theme('colors.red.500');
+  --destructive-foreground: theme('colors.white');
+  --border: theme('colors.slate.200');
+  --input: theme('colors.slate.200');
+  --ring: theme('colors.blue.600');
+  --radius: 0.75rem;
+  --gradient-primary: linear-gradient(
+    to bottom right,
+    theme('colors.blue.900'),
+    theme('colors.blue.700')
+    );
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+}
