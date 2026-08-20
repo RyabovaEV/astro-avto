@@ -1,0 +1,73 @@
+---
+import { getCollection } from "astro:content";
+import { organization } from "@/data/organization/organization";
+import { MapPin, Clock, Mail, Phone } from "lucide-astro";
+import Logo from "./Logo.astro";
+import { NavItems } from "@/config/navigation";
+import { cleanPhoneNumber } from "@/scripts/cleanPhoneNumber";
+
+const [mainPhone] = await getCollection(
+  "phones",
+  ({ data }) => data.signature === "MAIN",
+);
+
+if (!mainPhone) {
+  throw new Error("Не смог найти сигнатуру с названием - MAIN");
+}
+
+const address = organization.address;
+const workingHours = organization.workingHours;
+const email = organization.email;
+const phoneLabel = mainPhone.data.label;
+const phoneNumber = mainPhone.data.phone;
+const cleanNumber = cleanPhoneNumber(phoneNumber);
+---
+
+<footer class="bg-footer-background text-footer-foreground py-10">
+  <div
+    class="container mx-auto flex flex-col justify-between gap-10 px-4 lg:flex-row"
+  >
+    <div class="flex flex-col gap-5">
+      <Logo />
+      <p>Регулярные маршруты по городу и району.</p>
+      <span class="bg-gradient-highlight block h-0.5 w-16 rounded-full"></span>
+    </div>
+    <div class="flex flex-col gap-5">
+      <h3 class="text-footer-title">Контакты</h3>
+      <ul class="flex flex-col gap-3">
+        <li class="flex items-center gap-2">
+          <MapPin class="text-primary h-5 w-5" />
+          <p>{address}</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Clock class="text-primary h-5 w-5" />
+          <p>{workingHours}</p>
+        </li>
+        <li class="flex items-center gap-2">
+          <Mail class="text-primary h-5 w-5" />
+          <a href=`mailto:${email}` aria-label="Написать нам">{email}</a>
+        </li>
+        <li class="flex items-center gap-2">
+          <Phone class="text-primary h-5 w-5" />
+          <a href=`tel:${cleanNumber}`>{phoneLabel}: {phoneNumber}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-5">
+      <h3 class="text-footer-title">Навигация</h3>
+      <nav aria-label="Дополнительная навигация">
+        <ul class="flex flex-col gap-2">
+          {
+            NavItems.map((navItem) => (
+              <li>
+                <a href={navItem.href} class="hover:text-footer-title">
+                  {navItem.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

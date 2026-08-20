@@ -1,0 +1,75 @@
+---
+import { cn } from "@/utils/cn";
+import { getCollection } from "astro:content";
+import Logo from "./Logo.astro";
+import { NavItems } from "@/config/navigation";
+import { cleanPhoneNumber } from "@/scripts/cleanPhoneNumber";
+
+const REQUIRED_SIGNATURES = ["MAIN", "DISP"] as const;
+
+const phones = await getCollection(
+  "phones",
+  ({ data }) => (REQUIRED_SIGNATURES as readonly string[]).includes(data.signature),
+);
+
+const missing = REQUIRED_SIGNATURES.filter(
+  (sig) => !phones.some((p) => p.data.signature === sig)
+);
+
+if (missing.length) {
+  throw new Error(`В коллекции phones не найдены signature: ${missing.join(", ")}`);
+}
+
+const pathname = Astro.url.pathname;
+---
+
+<header class="container mx-auto flex items-center justify-between py-10">
+  <div>
+    <Logo />
+  </div>
+  <nav aria-label="Основная навигация">
+    <ul class="flex gap-2">
+      {
+        NavItems.map((navItem) => {
+          const isActive = navItem.href === pathname;
+          return (
+            <li>
+              <a
+                href={navItem.href}
+                class={cn(
+                  "text-link-menu hover:bg-accent hover:text-foreground rounded px-4 py-2 font-semibold focus-ring",
+                  isActive && "bg-accent text-primary",
+                )}
+              >
+                {navItem.label}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </nav>
+  <div>
+    <ul class="flex flex-col gap-4">
+      {
+        phones.map((phone) => {
+          const cleanPhone = cleanPhoneNumber(phone.data.phone);
+          return (
+            <li>
+              <p class="text-sm font-semibold tracking-widest uppercase">
+                {phone.data.label}
+              </p>
+              <a
+                href=`tel:${cleanPhone}`
+                aria-label=`Телефон ${phone.data.label}`
+                class="text-link-menu hover:text-primary focus-ring"
+              >
+                {phone.data.phone}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</header>
