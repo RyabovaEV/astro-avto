@@ -11,7 +11,7 @@ interface Props {
 const {
   title,
   description = "Официальные пассажирские перевозки в Киришах и районе: расписание и маршруты на сайте. Обучение вождению в нашей автошколе.",
-} = Astro.props;
+} = Astro.props as Props;
 
 const siteName = "Киришские пассажирские автоперевозки";
 const pageTitle = title ? `${title} — ${siteName}` : siteName;

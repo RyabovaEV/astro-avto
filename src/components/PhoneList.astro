@@ -1,0 +1,42 @@
+---
+import { cleanPhoneNumber } from "@/scripts/cleanPhoneNumber";
+import { cn } from "@/utils/cn";
+import type { CollectionEntry } from "astro:content";
+
+interface Phone {
+  phones: CollectionEntry<"phones">["data"][];
+  variant: "desktop" | "mobile";
+}
+
+const { phones, variant } = Astro.props as Phone;
+---
+
+<ul class={cn("flex gap-4", variant === "mobile" && "gap-6")}>
+  {
+    phones.map((phone) => {
+      const cleanPhone = cleanPhoneNumber(phone.phone);
+      return (
+        <>
+          <li
+            class={cn(
+              "flex flex-col gap-1 text-xs",
+              variant === "mobile" && "gap-2",
+            )}
+          >
+            <p class="font-medium">{phone.label}</p>
+            <a
+              href={`tel:${cleanPhone}`}
+              aria-label={`Телефон ${phone.label}`}
+              class="text-link-menu hover:text-primary focus-ring text-sm"
+            >
+              {phone.phone}
+            </a>
+          </li>
+          {phone !== phones[phones.length - 1] && (
+            <div class="h-8 w-px bg-[rgba(37,99,235,0.12)]" />
+          )}
+        </>
+      );
+    })
+  }
+</ul>
