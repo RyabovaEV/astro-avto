@@ -2,10 +2,10 @@
 import { getCollection } from "astro:content";
 import { organization } from "@/data/organization/organization";
 import { MapPin, Clock, Mail, Phone } from "lucide-astro";
-import Logo from "./Logo.astro";
 import { NavItems } from "@/config/navigation";
 import { cleanPhoneNumber } from "@/scripts/cleanPhoneNumber";
-
+import Logo from "./Logo.astro";
+import GradientHighlight from "../backgrounds/GradientHighlight.astro";
 const [mainPhone] = await getCollection(
   "phones",
   ({ data }) => data.signature === "MAIN",
@@ -30,7 +30,7 @@ const cleanNumber = cleanPhoneNumber(phoneNumber);
     <div class="flex flex-col gap-5">
       <Logo />
       <p>Регулярные маршруты по городу и району.</p>
-      <span class="bg-gradient-highlight block h-0.5 w-16 rounded-full"></span>
+      <GradientHighlight length={64} class="mb-4" />
     </div>
     <div class="flex flex-col gap-5">
       <h3 class="text-footer-title">Контакты</h3>

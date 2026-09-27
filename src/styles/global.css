@@ -27,6 +27,15 @@
   --footer-muted-foreground: theme("colors.slate.400");
   --link: theme("colors.slate.500");
   --subtitle: theme("colors.neutral.400");
+  --hero-foreground-muted: theme("colors.sky.300 / 0.9");
+  --btn-primary: theme("colors.blue.600");
+  --btn-primary-foreground: theme("colors.white");
+  --btn-primary-hover: theme("colors.blue.700");
+  --btn-outline: transparent;
+  --btn-outline-foreground: theme("colors.white");
+  --btn-outline-hover: theme("colors.white / 0.1");
+  --btn-outline-border: theme("colors.blue.600");
+
   --radius: 0.75rem;
   --z-dropdown: 10;
   --z-header: 20;
@@ -78,6 +87,14 @@
   --color-footer-muted-foreground: var(--footer-muted-foreground);
   --color-link-menu: var(--link);
   --color-subtitle: var(--subtitle);
+  --color-hero-foreground-muted: var(--hero-foreground-muted);
+  --color-btn-primary: var(--btn-primary);
+  --color-btn-primary-foreground: var(--btn-primary-foreground);
+  --color-btn-primary-hover: var(--btn-primary-hover);
+  --color-btn-outline: var(--btn-outline);
+  --color-btn-outline-foreground: var(--btn-outline-foreground);
+  --color-btn-outline-hover: var(--btn-outline-hover);
+  --color-btn-outline-border: var(--btn-outline-border);
 }
 
 @layer utilities {

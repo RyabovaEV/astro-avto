@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  isH1?: boolean;
+  class?: string;
+  id?: string;
+}
+
+const {
+  title,
+  description,
+  isH1 = false,
+  class: className = "",
+  id,
+} = Astro.props as Props;
+---
+
+<section class={`section ${className}`} id={id}>
+  <header class="container">
+    {
+      isH1 ? (
+        <h1 class="section-title">{title}</h1>
+      ) : (
+        <h2 class="section-title">{title}</h2>
+      )
+    }
+    {description && <p class="section-description">{description}</p>}
+  </header>
+  <div class="section-content">
+    <slot />
+  </div>
+</section>

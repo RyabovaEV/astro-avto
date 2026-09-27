@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import Logo from "./Logo.astro";
 import { NavItems } from "@/config/navigation";
+import Logo from "./Logo.astro";
+import MobileMenu from "./MobileMenu.astro";
 import NavLinks from "./NavLinks.astro";
 import PhoneList from "./PhoneList.astro";
-import MobileMenu from "./MobileMenu.astro";
 
 const REQUIRED_SIGNATURES = ["MAIN", "DISP"] as const;
 
@@ -25,7 +25,7 @@ if (missing.length) {
 
 <header class="relative">
   <div
-    class="container mx-auto flex items-center justify-between px-4 py-6 lg:py-10"
+    class="container mx-auto flex items-center justify-between px-4 py-6 lg:py-8"
   >
     <Logo />
     <nav class="hidden lg:block" aria-label="Основная навигация">

@@ -1,0 +1,12 @@
+---
+interface Props {
+  length: number;
+  class?: string;
+}
+
+const { length, class: className = "" } = Astro.props as Props;
+---
+
+<span
+  class={`bg-gradient-highlight block h-0.5 ${className}`}
+  style={{ width: `${length}px` }}></span>

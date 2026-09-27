@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Section from "../components/ui/Section.astro";
+import Hero from "@/components/sections/home/Hero.astro";
 ---
 
 <Layout
@@ -8,5 +10,10 @@ import Layout from "../layouts/Layout.astro";
 пассажирские перевозки в Киришах и Киришском районе. Расписание автобусов,
 контакты, автошкола."
 >
-  <h1>ООО "Авто", ООО "КПАП"</h1>
+  <Hero />
+  <Section
+    title="Добро пожаловать на официальный сайт ООО АВТО, ООО КПАП"
+    description="Мы предоставляем регулярные маршруты по городу и району, обеспечивая комфортные и безопасные пассажирские перевозки. На нашем сайте вы найдете актуальное расписание автобусов, контактную информацию и подробности о нашей автошколе."
+    isH1
+  />
 </Layout>

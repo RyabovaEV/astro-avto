@@ -1,0 +1,73 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "@/utils/cn";
+import * as Icons from "lucide-astro";
+
+type ButtonMode = "primary" | "outline" | "white" | "link";
+type ButtonSize = "sm" | "md" | "lg";
+type LinkAttrs = HTMLAttributes<"a">;
+type ButtonAttrs = HTMLAttributes<"button">;
+
+interface Props {
+  variant?: ButtonMode;
+  size?: ButtonSize;
+  href?: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
+  label: string;
+  iconLeft?: keyof typeof Icons;
+  iconRight?: keyof typeof Icons;
+  class?: string;
+}
+
+const {
+  variant = "primary",
+  size = "md",
+  href,
+  target = "_self",
+  label,
+  iconLeft,
+  iconRight,
+  class: className = "",
+} = Astro.props as Props;
+
+const isLink = href !== undefined;
+
+const IconLeft = iconLeft ? Icons[iconLeft] : null;
+const IconRight = iconRight ? Icons[iconRight] : null;
+
+const baseStyles =
+  "focus-visible:ring-ring inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg font-semibold transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50";
+
+const sizeStyles: Record<ButtonSize, string> = {
+  sm: "px-3 py-1.5 text-sm",
+  md: "px-4 py-2 text-sm md:px-5 md:py-2.5",
+  lg: "px-5 py-2.5 text-sm md:px-7 md:py-3.5 md:text-base",
+};
+
+const stylesBtn = {
+  primary:
+    "bg-btn-primary text-btn-primary-foreground hover:bg-btn-primary-hover shadow-sm",
+  outline:
+    "border border-btn-outline-border bg-btn-outline hover:bg-btn-outline-hover text-btn-outline-foreground",
+  white: "bg-white text-black hover:bg-gray-100",
+  link: "text-primary underline-offset-4 hover:underline",
+};
+
+const Tag = isLink ? "a" : "button";
+const tagProps: LinkAttrs | ButtonAttrs = isLink
+  ? {
+      href,
+      target,
+      rel: target === "_blank" ? "noopener noreferrer" : undefined,
+    }
+  : { type: "button" };
+---
+
+<Tag
+  {...tagProps as Record<string, unknown>}
+  class={cn(baseStyles, sizeStyles[size], stylesBtn[variant], className)}
+>
+  {IconLeft && <IconLeft class="size-4" aria-hidden="true" />}
+  <span>{label}</span>
+  {IconRight && <IconRight class="size-4" aria-hidden="true" />}
+</Tag>

@@ -1,0 +1,51 @@
+---
+import GradientHighlight from "@/components/backgrounds/GradientHighlight.astro";
+import GradientPanel from "@/components/backgrounds/GradientPanel.astro";
+import RingsPattern from "@/components/backgrounds/RingsPattern.astro";
+import Button from "@/components/ui/Button.astro";
+---
+
+<GradientPanel>
+  <RingsPattern class="-bottom-[5%] -left-[5%] opacity-[0.1]" />
+  <div
+    class="container mx-auto grid gap-10 px-4 py-16 sm:py-20 md:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-24"
+  >
+    <div class="max-w-xl">
+      <GradientHighlight length={100} class="mb-4" />
+      <h1
+        class="mb-4 text-3xl leading-tight font-bold tracking-tight text-white lg:text-4xl"
+      >
+        Добро пожаловать на официальный сайт ООО АВТО, ООО КПАП
+      </h1>
+      <p
+        class="text-hero-foreground-muted mb-10 text-lg leading-relaxed sm:text-xl"
+      >
+        Регулярные маршруты по городу и району.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <Button
+          variant="primary"
+          href="/"
+          label="Расписание маршрутов"
+          iconLeft="CalendarCheck"
+          size="lg"
+        />
+        <Button
+          variant="outline"
+          href="/"
+          label="О компании"
+          iconRight="ChevronRight"
+          size="lg"
+        />
+      </div>
+    </div>
+    <div class="hidden items-center justify-center lg:flex">
+      <img
+        src="/images/hero-bus.svg"
+        alt=""
+        aria-hidden="true"
+        class="mx-auto w-full max-w-md xl:max-w-lg"
+      />
+    </div>
+  </div>
+</GradientPanel>
