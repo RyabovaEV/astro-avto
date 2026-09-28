@@ -1,0 +1,18 @@
+---
+import * as Icons from "lucide-astro";
+
+interface Props {
+  icon: keyof typeof Icons;
+}
+
+const { icon } = Astro.props as Props;
+
+const IconComponent = Icons[icon];
+---
+
+<div
+  class="bg-secondary flex shrink-0 items-center justify-center rounded-lg p-4"
+  aria-hidden="true"
+>
+  <IconComponent class="text-primary h-6 w-6" />
+</div>

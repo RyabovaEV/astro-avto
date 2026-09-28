@@ -1,0 +1,38 @@
+---
+import IconTile from "@/components/ui/IconTile.astro";
+import { insurance } from "@/data/insurance/insurance";
+import { formatDate, toISODate } from "@/scripts/formatDate";
+
+const number = insurance.number;
+const dateBegin = formatDate(insurance.dateBegin);
+const dateEnd = formatDate(insurance.dateEnd);
+---
+
+<section aria-label="Страхование перевозчика" class="bg-banner-background">
+  <div class="container mx-auto px-4 py-7">
+    <div class="flex flex-col items-start gap-7 sm:flex-row">
+      <IconTile icon="Shield" />
+      <div class="flex flex-col gap-2">
+        <h2 class="text-banner-foreground mb-1 text-lg font-semibold">
+          Страховой полис перевозчика
+        </h2>
+        <p class="text-banner-foreground-muted text-sm">
+          В соответствии с Федеральным законом «Об обязательном страховании
+          гражданской ответственности перевозчика за причинение вреда жизни,
+          здоровью, имуществу пассажиров» с Открытым страховым акционерным
+          обществом «Ингосстрах», находящемуся по адресу: 196066,
+          Санкт-Петербург, пр. Московский, д. 155, заключены следующие договоры:
+        </p>
+        <p class="text-banner-foreground-muted text-sm">
+          OOO «АВТО»: № {number}, <span
+            class="text-banner-foreground text-base font-semibold"
+            >Срок страхования с <time datetime={toISODate(insurance.dateBegin)}
+              >{dateBegin}</time
+            > по <time datetime={toISODate(insurance.dateEnd)}>{dateEnd}</time
+            ></span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

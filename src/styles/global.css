@@ -35,6 +35,9 @@
   --btn-outline-foreground: theme("colors.white");
   --btn-outline-hover: theme("colors.white / 0.1");
   --btn-outline-border: theme("colors.blue.600");
+  --banner-background: theme("colors.blue.50");
+  --banner-foreground: theme("colors.slate.900");
+  --banner-foreground-muted: theme("colors.slate.600");
 
   --radius: 0.75rem;
   --z-dropdown: 10;
@@ -95,6 +98,9 @@
   --color-btn-outline-foreground: var(--btn-outline-foreground);
   --color-btn-outline-hover: var(--btn-outline-hover);
   --color-btn-outline-border: var(--btn-outline-border);
+  --color-banner-background: var(--banner-background);
+  --color-banner-foreground: var(--banner-foreground);
+  --color-banner-foreground-muted: var(--banner-foreground-muted);
 }
 
 @layer utilities {
