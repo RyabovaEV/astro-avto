@@ -31,9 +31,13 @@
   --btn-primary: theme("colors.blue.600");
   --btn-primary-foreground: theme("colors.white");
   --btn-primary-hover: theme("colors.blue.700");
+  --btn-outline-hero: transparent;
+  --btn-outline-foreground-hero: theme("colors.white");
+  --btn-outline-hover-hero: theme("colors.white / 0.1");
+  --btn-outline-border-hero: theme("colors.blue.600");
   --btn-outline: transparent;
-  --btn-outline-foreground: theme("colors.white");
-  --btn-outline-hover: theme("colors.white / 0.1");
+  --btn-outline-foreground: theme("colors.blue.600");
+  --btn-outline-hover: theme("color.blue.50");
   --btn-outline-border: theme("colors.blue.600");
   --banner-background: theme("colors.blue.50");
   --banner-foreground: theme("colors.slate.900");
@@ -62,6 +66,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -94,13 +99,17 @@
   --color-btn-primary: var(--btn-primary);
   --color-btn-primary-foreground: var(--btn-primary-foreground);
   --color-btn-primary-hover: var(--btn-primary-hover);
+  --color-btn-outline-hero: var(--btn-outline-hero);
+  --color-btn-outline-foreground-hero: var(--btn-outline-foreground-hero);
+  --color-btn-outline-hover-hero: var(--btn-outline-hover-hero);
+  --color-btn-outline-border-hero: var(--btn-outline-border-hero);
+  --color-banner-background: var(--banner-background);
+  --color-banner-foreground: var(--banner-foreground);
+  --color-banner-foreground-muted: var(--banner-foreground-muted);
   --color-btn-outline: var(--btn-outline);
   --color-btn-outline-foreground: var(--btn-outline-foreground);
   --color-btn-outline-hover: var(--btn-outline-hover);
   --color-btn-outline-border: var(--btn-outline-border);
-  --color-banner-background: var(--banner-background);
-  --color-banner-foreground: var(--banner-foreground);
-  --color-banner-foreground-muted: var(--banner-foreground-muted);
 }
 
 @layer utilities {
@@ -109,6 +118,10 @@
   }
   .bg-gradient-highlight {
     background-image: var(--gradient-highlight);
+  }
+  .container {
+    margin-inline: auto;
+    padding-inline: theme(spacing.4);
   }
 }
 

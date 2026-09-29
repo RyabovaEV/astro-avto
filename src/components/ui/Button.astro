@@ -3,7 +3,7 @@ import type { HTMLAttributes } from "astro/types";
 import { cn } from "@/utils/cn";
 import * as Icons from "lucide-astro";
 
-type ButtonMode = "primary" | "outline" | "white" | "link";
+type ButtonMode = "primary" | "outlineHero" | "outline" | "white" | "link";
 type ButtonSize = "sm" | "md" | "lg";
 type LinkAttrs = HTMLAttributes<"a">;
 type ButtonAttrs = HTMLAttributes<"button">;
@@ -36,17 +36,19 @@ const IconLeft = iconLeft ? Icons[iconLeft] : null;
 const IconRight = iconRight ? Icons[iconRight] : null;
 
 const baseStyles =
-  "focus-visible:ring-ring inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg font-semibold transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50";
+  "focus-visible:ring-ring inline-flex cursor-pointer items-center justify-center gap-2 font-semibold transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50";
 
 const sizeStyles: Record<ButtonSize, string> = {
   sm: "px-3 py-1.5 text-sm",
-  md: "px-4 py-2 text-sm md:px-5 md:py-2.5",
-  lg: "px-5 py-2.5 text-sm md:px-7 md:py-3.5 md:text-base",
+  md: "px-4 py-2 text-sm rounded-sm md:px-5 md:py-2.5",
+  lg: "px-5 py-2.5 text-sm rounded-lg md:px-7 md:py-3.5 md:text-base md:rounded-sm",
 };
 
 const stylesBtn = {
   primary:
     "bg-btn-primary text-btn-primary-foreground hover:bg-btn-primary-hover shadow-sm",
+  outlineHero:
+    "border border-btn-outline-border-hero bg-btn-outline-hero hover:bg-btn-outline-hover-hero text-btn-outline-foreground-hero",
   outline:
     "border border-btn-outline-border bg-btn-outline hover:bg-btn-outline-hover text-btn-outline-foreground",
   white: "bg-white text-black hover:bg-gray-100",

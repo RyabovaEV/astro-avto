@@ -1,0 +1,50 @@
+---
+import { cn } from "@/utils/cn";
+import GradientHighlight from "../backgrounds/GradientHighlight.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
+  size?: "sm" | "md" | "lg";
+  id?: string;
+  class?: string;
+}
+
+const {
+  title,
+  description,
+  level = 2,
+  size = "md",
+  id,
+  class: className = "",
+} = Astro.props as Props;
+
+type HeadingTag = `h${NonNullable<Props["level"]>}`;
+const Tag: HeadingTag = `h${level}`;
+
+const sizeClasses: Record<NonNullable<Props["size"]>, string> = {
+  sm: "text-lg md:text-xl",
+  md: "text-2xl md:text-3xl",
+  lg: "text-3xl md:text-4xl",
+};
+---
+
+<header
+  class={cn(
+    "flex gap-4 flex-col sm:flex-row sm:items-end sm:justify-between",
+    className,
+  )}
+>
+  <div class="flex flex-col gap-2">
+    <GradientHighlight length={80} class="mb-4" />
+    <Tag
+      id={id}
+      class={cn("font-bold tracking-tight text-foreground", sizeClasses[size])}
+    >
+      {title}
+    </Tag>
+    {description && <p class="text-banner-foreground-muted">{description}</p>}
+  </div>
+  <slot name="action" />
+</header>

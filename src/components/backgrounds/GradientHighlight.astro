@@ -9,4 +9,5 @@ const { length, class: className = "" } = Astro.props as Props;
 
 <span
   class={`bg-gradient-highlight block h-0.5 ${className}`}
+  aria-hidden="true"
   style={{ width: `${length}px` }}></span>

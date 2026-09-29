@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/ui/Section.astro";
 import Hero from "@/components/sections/home/Hero.astro";
 import InsuranceBanner from "@/components/sections/home/InsuranceBanner.astro";
+import Button from "@/components/ui/Button.astro";
 ---
 
 <Layout
@@ -13,9 +14,34 @@ import InsuranceBanner from "@/components/sections/home/InsuranceBanner.astro";
 >
   <Hero />
   <InsuranceBanner />
-  <Section
-    title="Добро пожаловать на официальный сайт ООО АВТО, ООО КПАП"
-    description="Мы предоставляем регулярные маршруты по городу и району, обеспечивая комфортные и безопасные пассажирские перевозки. На нашем сайте вы найдете актуальное расписание автобусов, контактную информацию и подробности о нашей автошколе."
-    isH1
-  />
+  <div class="flex flex-col gap-15 py-25">
+    <Section
+      title="Новости"
+      description="Последние новости и события компании."
+      id="news"
+    >
+      <Button
+        slot="action"
+        variant="outline"
+        href="/"
+        label="Все новости"
+        iconRight="ChevronRight"
+      />
+      Новости
+    </Section>
+    <Section
+      title="Документы"
+      description="Нормативные и правовые документы"
+      id="docs"
+    >
+      <Button
+        slot="action"
+        variant="outline"
+        href="/"
+        label="Все документы"
+        iconRight="ChevronRight"
+      />
+      Документы
+    </Section>
+  </div>
 </Layout>
