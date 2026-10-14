@@ -1,0 +1,60 @@
+---
+import Section from "@/components/ui/Section.astro";
+import Button from "@/components/ui/Button.astro";
+import Card from "@/components/ui/Card.astro";
+import { getCollection } from "astro:content";
+import MarkdownText from "@/components/ui/MarkdownText.astro";
+import { formatDate, toISODate } from "@/scripts/formatDate";
+
+const news = await getCollection("news");
+//const news = [];
+
+const sortedNews = news.toSorted(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+const latestNews = sortedNews.slice(0, 3);
+---
+
+<Section
+  title="Новости"
+  description="Последние новости и события компании."
+  id="news"
+>
+  <Button
+    slot="action"
+    variant="outline"
+    href="/"
+    label="Все новости"
+    iconRight="ChevronRight"
+  />
+  {
+    latestNews.length === 0 ? (
+      <Card padding="md" class="text-center">
+        <p class="text-banner-foreground-muted text-sm">Новостей пока нет.</p>
+      </Card>
+    ) : (
+      <Card tag="ul" padding="none" class="divide-border divide-y">
+        {latestNews.map((newsItem) => (
+          <li class="flex flex-col gap-2 p-7">
+            <div class="flex items-center gap-3 text-xs font-medium">
+              <time
+                datetime={toISODate(newsItem.data.date)}
+                class="text-banner-foreground-muted"
+              >
+                {formatDate(newsItem.data.date)}
+              </time>
+              {newsItem.data.isMain && (
+                <span class="bg-destructive-muted text-destructive rounded-sm px-2 py-0.5 font-semibold">
+                  Важно
+                </span>
+              )}
+            </div>
+            <div class="text-foreground [&_a]:text-primary [&_a:hover]:text-btn-primary-hover text-sm [&_a]:underline [&_a]:underline-offset-2 [&_li+li]:mt-1 [&_ol]:list-decimal [&_ol]:pl-5 [&_p+ol]:mt-2 [&_p+p]:mt-2 [&_p+ul]:mt-2 [&_ul]:list-disc [&_ul]:pl-5">
+              <MarkdownText content={newsItem.data.news} />
+            </div>
+          </li>
+        ))}
+      </Card>
+    )
+  }
+</Section>

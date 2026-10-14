@@ -16,9 +16,10 @@
   --muted-foreground: theme("colors.slate.400");
   --accent: theme("colors.blue.50");
   --accent-foreground: theme("colors.blue.900");
-  --destructive: theme("colors.red.500");
+  --destructive: theme("colors.red.700");
   --destructive-foreground: theme("colors.white");
-  --border: theme("colors.slate.200");
+  --destructive-muted: theme("colors.red.50");
+  --border: theme("colors.blue.600 / 0.12");
   --input: theme("colors.slate.200");
   --ring: theme("colors.blue.600");
   --highlight: theme("colors.cyan.400");
@@ -37,7 +38,7 @@
   --btn-outline-border-hero: theme("colors.blue.600");
   --btn-outline: transparent;
   --btn-outline-foreground: theme("colors.blue.600");
-  --btn-outline-hover: theme("color.blue.50");
+  --btn-outline-hover: theme("colors.blue.50");
   --btn-outline-border: theme("colors.blue.600");
   --banner-background: theme("colors.blue.50");
   --banner-foreground: theme("colors.slate.900");
@@ -81,6 +82,7 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-muted: var(--destructive-muted);
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);

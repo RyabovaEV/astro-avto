@@ -10,7 +10,19 @@ const { content } = Astro.props;
 const row = await marked.parse(content, { breaks: true });
 
 const safe = sanitizeHtml(row, {
-  allowedTags: ["h1", "p", "strong", "a", "b", "i", "li", "ul", "ol", "br"],
+  allowedTags: [
+    "p",
+    "strong",
+    "a",
+    "b",
+    "i",
+    "li",
+    "ul",
+    "ol",
+    "br",
+    "em",
+    "span",
+  ],
   allowedAttributes: {
     a: ["href", "name"],
     strong: ["class"],
