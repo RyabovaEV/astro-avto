@@ -1,0 +1,56 @@
+---
+import Section from "@/components/ui/Section.astro";
+import Button from "@/components/ui/Button.astro";
+import { getCollection } from "astro:content";
+import Card from "@/components/ui/Card.astro";
+import IconTile from "@/components/ui/IconTile.astro";
+import { ExternalLink } from "lucide-astro";
+
+const documents = await getCollection("documents");
+
+const sortedDocuments = documents.toSorted(
+  (a, b) => Number(a.id) - Number(b.id),
+);
+const latestDocuments = sortedDocuments.slice(0, 2);
+---
+
+<Section
+  title="Документы"
+  description="Нормативные и правовые документы"
+  id="docs"
+>
+  <Button
+    slot="action"
+    variant="outline"
+    href="/"
+    label="Все документы"
+    iconRight="ChevronRight"
+  />
+  {
+    latestDocuments.length === 0 ? (
+      <p class="text-banner-foreground-muted text-center text-sm">
+        Документов пока нет.
+      </p>
+    ) : (
+      <Card tag="ul" padding="none" class="divide-border divide-y">
+        {latestDocuments.map((docItem) => (
+          <li>
+            <a
+              href={docItem.data.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:bg-accent focus-ring flex items-center gap-4 px-6 py-4"
+            >
+              <IconTile icon="FileText" />
+              <span class="grow">
+                {docItem.data.title}
+                <span class="sr-only">(откроется в новой вкладке)</span>
+              </span>
+              <ExternalLink aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </Card>
+    )
+  }
+</Section>

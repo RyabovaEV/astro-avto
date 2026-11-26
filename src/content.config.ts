@@ -21,6 +21,14 @@ const phones = defineCollection({
   }),
 });
 
+const documents = defineCollection({
+  loader: file("src/data/docs.json"),
+  schema: z.object({
+    href: z.string().startsWith("/documents/"),
+    title: z.string().min(1, { message: "Title cannot be empty" }),
+  }),
+});
+
 const routesSuburbanCurrent = defineCollection({
   loader: file("src/data/routes/summer-suburban.json"),
   schema: routeSchema,
@@ -44,6 +52,7 @@ const routesCityUpcoming = defineCollection({
 export const collections = {
   news,
   phones,
+  documents,
   routesSuburbanCurrent,
   routesSuburbanUpcoming,
   routesCityCurrent,

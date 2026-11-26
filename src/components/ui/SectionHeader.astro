@@ -30,21 +30,22 @@ const sizeClasses: Record<NonNullable<Props["size"]>, string> = {
 };
 ---
 
-<header
-  class={cn(
-    "flex gap-4 flex-col sm:flex-row sm:items-end sm:justify-between",
-    className,
-  )}
->
+<header class={cn("flex gap-4 justify-between items-end", className)}>
   <div class="flex flex-col gap-2">
-    <GradientHighlight length={80} class="mb-4" />
+    <GradientHighlight length={80} class="mb-2 sm:mb-4" />
     <Tag
       id={id}
       class={cn("font-bold tracking-tight text-foreground", sizeClasses[size])}
     >
       {title}
     </Tag>
-    {description && <p class="text-banner-foreground-muted">{description}</p>}
+    {
+      description && (
+        <p class="text-banner-foreground-muted hidden sm:block">
+          {description}
+        </p>
+      )
+    }
   </div>
   <slot name="action" />
 </header>

@@ -1,10 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Section from "../components/ui/Section.astro";
 import Hero from "@/components/sections/home/Hero.astro";
 import InsuranceBanner from "@/components/sections/home/InsuranceBanner.astro";
-import Button from "@/components/ui/Button.astro";
 import News from "@/components/sections/home/News.astro";
+import Docs from "@/components/sections/home/Docs.astro";
 ---
 
 <Layout
@@ -17,19 +16,6 @@ import News from "@/components/sections/home/News.astro";
   <InsuranceBanner />
   <div class="flex flex-col gap-15 py-25">
     <News />
-    <Section
-      title="Документы"
-      description="Нормативные и правовые документы"
-      id="docs"
-    >
-      <Button
-        slot="action"
-        variant="outline"
-        href="/"
-        label="Все документы"
-        iconRight="ChevronRight"
-      />
-      Документы
-    </Section>
+    <Docs />
   </div>
 </Layout>
