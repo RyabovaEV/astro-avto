@@ -6,8 +6,7 @@ import { navSections } from "@/config/navigation";
 import { cleanPhoneNumber } from "@/scripts/cleanPhoneNumber";
 import Logo from "./Logo.astro";
 import GradientHighlight from "../backgrounds/GradientHighlight.astro";
-import { getSectionHref, isSectionActive } from "@/utils/navigation";
-import { cn } from "@/utils/cn";
+import NavLinks from "./NavLinks.astro";
 const [mainPhone] = await getCollection(
   "phones",
   ({ data }) => data.signature === "MAIN",
@@ -16,8 +15,6 @@ const [mainPhone] = await getCollection(
 if (!mainPhone) {
   throw new Error("Не смог найти сигнатуру с названием - MAIN");
 }
-
-const pathname = Astro.url.pathname;
 
 const address = organization.address;
 const workingHours = organization.workingHours;
@@ -58,27 +55,7 @@ const cleanNumber = cleanPhoneNumber(phoneNumber);
     <div class="flex flex-col gap-5">
       <h3 class="text-footer-title">Навигация</h3>
       <nav aria-label="Дополнительная навигация">
-        <ul class="flex flex-col gap-2">
-          {
-            navSections.map((navItem) => {
-              const isActive = isSectionActive(navItem, pathname);
-              return (
-                <li>
-                  <a
-                    href={getSectionHref(navItem)}
-                    class={cn(
-                      "hover:text-footer-title",
-                      isActive && "text-footer-title",
-                    )}
-                    aria-current={isActive ? "page" : undefined}
-                  >
-                    {navItem.label}
-                  </a>
-                </li>
-              );
-            })
-          }
-        </ul>
+        <NavLinks sections={navSections} variant="footer" />
       </nav>
     </div>
   </div>
