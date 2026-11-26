@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import { NavItems } from "@/config/navigation";
 import Logo from "./Logo.astro";
 import MobileMenu from "./MobileMenu.astro";
 import NavLinks from "./NavLinks.astro";
 import PhoneList from "./PhoneList.astro";
+import { navSections } from "@/config/navigation";
 
 const REQUIRED_SIGNATURES = ["MAIN", "DISP"] as const;
 
@@ -27,11 +27,11 @@ if (missing.length) {
   <div class="container flex items-center justify-between py-6 lg:py-8">
     <Logo />
     <nav class="hidden lg:block" aria-label="Основная навигация">
-      <NavLinks items={NavItems} variant="desktop" />
+      <NavLinks items={navSections} variant="desktop" />
     </nav>
     <div class="hidden xl:block">
       <PhoneList phones={phones.map((p) => p.data)} variant="desktop" />
     </div>
-    <MobileMenu navItems={NavItems} phones={phones.map((p) => p.data)} />
+    <MobileMenu navItems={navSections} phones={phones.map((p) => p.data)} />
   </div>
 </header>

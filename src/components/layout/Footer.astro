@@ -2,10 +2,12 @@
 import { getCollection } from "astro:content";
 import { organization } from "@/data/organization/organization";
 import { MapPin, Clock, Mail, Phone } from "lucide-astro";
-import { NavItems } from "@/config/navigation";
+import { navSections } from "@/config/navigation";
 import { cleanPhoneNumber } from "@/scripts/cleanPhoneNumber";
 import Logo from "./Logo.astro";
 import GradientHighlight from "../backgrounds/GradientHighlight.astro";
+import { getSectionHref, isSectionActive } from "@/utils/navigation";
+import { cn } from "@/utils/cn";
 const [mainPhone] = await getCollection(
   "phones",
   ({ data }) => data.signature === "MAIN",
@@ -14,6 +16,8 @@ const [mainPhone] = await getCollection(
 if (!mainPhone) {
   throw new Error("Не смог найти сигнатуру с названием - MAIN");
 }
+
+const pathname = Astro.url.pathname;
 
 const address = organization.address;
 const workingHours = organization.workingHours;
@@ -56,13 +60,23 @@ const cleanNumber = cleanPhoneNumber(phoneNumber);
       <nav aria-label="Дополнительная навигация">
         <ul class="flex flex-col gap-2">
           {
-            NavItems.map((navItem) => (
-              <li>
-                <a href={navItem.href} class="hover:text-footer-title">
-                  {navItem.label}
-                </a>
-              </li>
-            ))
+            navSections.map((navItem) => {
+              const isActive = isSectionActive(navItem, pathname);
+              return (
+                <li>
+                  <a
+                    href={getSectionHref(navItem)}
+                    class={cn(
+                      "hover:text-footer-title",
+                      isActive && "text-footer-title",
+                    )}
+                    aria-current={isActive ? "page" : undefined}
+                  >
+                    {navItem.label}
+                  </a>
+                </li>
+              );
+            })
           }
         </ul>
       </nav>
