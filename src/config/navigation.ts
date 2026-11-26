@@ -1,23 +1,80 @@
-export interface NavItem {
+export interface NavTab {
   label: string;
-  href: string;
+  slug: string;
 }
 
-export const NavItems: NavItem[] = [
+export interface NavSection {
+  label: string;
+  base: string;
+  tabs: NavTab[];
+}
+
+export const navSections: NavSection[] = [
   {
     label: "Главная",
-    href: "/",
+    base: "/",
+    tabs: [],
   },
   {
     label: "Расписание",
-    href: "/schedule",
+    base: "/schedule",
+    tabs: [
+      {
+        label: "Пригородные",
+        slug: "suburban",
+      },
+      {
+        label: "Городские",
+        slug: "city",
+      },
+    ],
   },
   {
     label: "Автошкола",
-    href: "/driving-school",
+    base: "/driving-school",
+    tabs: [
+      {
+        label: "Общая информация",
+        slug: "info",
+      },
+      {
+        label: "Перевозка опасных грузов",
+        slug: "danger-goods",
+      },
+      {
+        label: "План обучения",
+        slug: "training-plan",
+      },
+      {
+        label: "Сведения об образовательной организации",
+        slug: "documents",
+      },
+    ],
   },
   {
     label: "О предприятии",
-    href: "/about",
+    base: "/about",
+    tabs: [
+      {
+        label: "Контакты",
+        slug: "contacts",
+      },
+      {
+        label: "Вакансии",
+        slug: "vacancies",
+      },
+      {
+        label: "Документы",
+        slug: "documents",
+      },
+      {
+        label: "Новости",
+        slug: "news",
+      },
+      {
+        label: "История",
+        slug: "history",
+      },
+    ],
   },
 ];

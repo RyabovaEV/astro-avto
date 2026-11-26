@@ -1,19 +1,19 @@
 ---
-import type { NavItem } from "@/config/navigation";
+import type { NavSection } from "@/config/navigation";
 import type { CollectionEntry } from "astro:content";
 import NavLinks from "./NavLinks.astro";
 import PhoneList from "./PhoneList.astro";
 
 interface Props {
-  navItems: NavItem[];
+  sections: NavSection[];
   phones: CollectionEntry<"phones">["data"][];
 }
 
-const { navItems, phones } = Astro.props as Props;
+const { sections, phones } = Astro.props as Props;
 ---
 
 <details class="lg:hidden">
-  <summary class="burger focus-ring" aria-label="Открыть меню">
+  <summary class="burger focus-ring" aria-label="Меню">
     <span class="burgerLine"></span>
     <span class="burgerLine"></span>
     <span class="burgerLine"></span>
@@ -21,7 +21,7 @@ const { navItems, phones } = Astro.props as Props;
 
   <div class="panel">
     <nav aria-label="Мобильная навигация" class="px-4 py-3">
-      <NavLinks items={navItems} variant="mobile" />
+      <NavLinks sections={sections} variant="mobile" />
     </nav>
     <div class="border-border border-t"></div>
     <div class="px-4 py-4">

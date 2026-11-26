@@ -1,13 +1,14 @@
 ---
-import type { NavItem } from "@/config/navigation";
+import type { NavSection } from "@/config/navigation";
 import { cn } from "@/utils/cn";
+import { getSectionHref, isSectionActive } from "@/utils/navigation";
 
 interface Props {
-  items: NavItem[];
+  sections: NavSection[];
   variant: "mobile" | "desktop";
 }
 
-const { items, variant } = Astro.props as Props;
+const { sections, variant } = Astro.props as Props;
 
 const pathname = Astro.url.pathname;
 const isMobile = variant === "mobile";
@@ -15,17 +16,18 @@ const isMobile = variant === "mobile";
 
 <ul class={cn("flex gap-2", isMobile && "flex-col")}>
   {
-    items.map((navItem) => {
-      const isActive = navItem.href === pathname;
+    sections.map((navItem) => {
+      const isActive = isSectionActive(navItem, pathname);
       return (
         <li>
           <a
-            href={navItem.href}
+            href={getSectionHref(navItem)}
             class={cn(
               "text-link-menu hover:bg-accent hover:text-foreground focus-ring rounded px-4 py-2 text-sm font-semibold",
               isMobile && "block w-full",
               isActive && "bg-accent text-primary",
             )}
+            aria-current={isActive ? "page" : undefined}
           >
             {navItem.label}
           </a>
