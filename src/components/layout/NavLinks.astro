@@ -3,18 +3,40 @@ import type { NavSection } from "@/config/navigation";
 import { cn } from "@/utils/cn";
 import { getSectionHref, isSectionActive } from "@/utils/navigation";
 
+type Variant = "mobile" | "desktop" | "footer";
+
 interface Props {
   sections: NavSection[];
-  variant: "mobile" | "desktop";
+  variant: Variant;
 }
 
 const { sections, variant } = Astro.props as Props;
 
 const pathname = Astro.url.pathname;
-const isMobile = variant === "mobile";
+
+const base = "focus-ring rounded text-sm font-semibold";
+
+const styles: Record<Variant, { list: string; link: string; active: string }> =
+  {
+    desktop: {
+      list: "",
+      link: "text-link-menu hover:bg-accent hover:text-foreground px-4 py-2",
+      active: "bg-accent text-primary",
+    },
+    mobile: {
+      list: "flex-col",
+      link: "text-link-menu hover:bg-accent hover:text-foreground px-4 py-2 block w-full",
+      active: "bg-accent text-primary",
+    },
+    footer: {
+      list: "flex-col",
+      link: "text-footer-foreground hover:text-footer-title focus-visible:outline-white",
+      active: "text-footer-title",
+    },
+  };
 ---
 
-<ul class={cn("flex gap-2", isMobile && "flex-col")}>
+<ul class={cn("flex gap-2", styles[variant].list)}>
   {
     sections.map((navItem) => {
       const isActive = isSectionActive(navItem, pathname);
@@ -23,9 +45,9 @@ const isMobile = variant === "mobile";
           <a
             href={getSectionHref(navItem)}
             class={cn(
-              "text-link-menu hover:bg-accent hover:text-foreground focus-ring rounded px-4 py-2 text-sm font-semibold",
-              isMobile && "block w-full",
-              isActive && "bg-accent text-primary",
+              base,
+              styles[variant].link,
+              isActive && styles[variant].active,
             )}
             aria-current={isActive ? "page" : undefined}
           >
