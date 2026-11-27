@@ -20,7 +20,7 @@ if (!section) {
 ---
 
 <Layout title={title} description={description}>
-  <div class="container">
+  <div class="container mt-8 sm:mt-16">
     <SectionHeader
       title={title}
       description={description}
@@ -30,10 +30,10 @@ if (!section) {
     <SectionTabs
       section={section}
       ariaLabel={`Навигация по разделу ${section.label}`}
-      class="mt-6"
+      class="mt-7"
     />
   </div>
-  <div class="container mt-8 sm:mt-16">
+  <div class="container mt-7 sm:mt-14">
     <slot />
   </div>
 </Layout>
