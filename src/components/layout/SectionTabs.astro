@@ -1,0 +1,45 @@
+---
+import type { NavSection } from "@/config/navigation";
+import { cn } from "@/utils/cn";
+import { getTabHref, isTabActive } from "@/utils/navigation";
+
+interface Props {
+  section: NavSection;
+  ariaLabel: string;
+  class?: string;
+}
+
+const { section, ariaLabel, class: className } = Astro.props as Props;
+
+const pathname = Astro.url.pathname;
+
+const baseStyle =
+  "focus-ring rounded px-4 py-2 text-sm font-semibold whitespace-nowrap";
+---
+
+<nav aria-label={ariaLabel}>
+  <ul class={cn("flex gap-2 overflow-x-auto p-1", className)}>
+    {
+      section.tabs.map((tabItem) => {
+        const href = getTabHref(section, tabItem);
+        const isActive = isTabActive(section, tabItem, pathname);
+        return (
+          <li>
+            <a
+              href={href}
+              class={cn(
+                baseStyle,
+                isActive
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-foreground",
+              )}
+              aria-current={isActive ? "page" : undefined}
+            >
+              {tabItem.label}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
