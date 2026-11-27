@@ -1,4 +1,4 @@
-import type { NavSection, NavTab } from "@/config/navigation";
+import { navSections, type NavSection, type NavTab } from "@/config/navigation";
 
 export function normalizePath(path: string): string {
   return path === "/" ? path : path.replace(/\/+$/, "");
@@ -36,4 +36,12 @@ export function isTabActive(
 ): boolean {
   const normalizedCurrentPath = normalizePath(currentPath);
   return normalizedCurrentPath === getTabHref(section, tab);
+}
+
+export function getSection(base: string): NavSection {
+  const section = navSections.find((s) => s.base === base);
+  if (!section) {
+    throw new Error(`Секция "${base}" не найдена.`);
+  }
+  return section;
 }

@@ -1,8 +1,8 @@
 ---
 import SectionTabs from "@/components/layout/SectionTabs.astro";
 import Layout from "./Layout.astro";
-import { navSections } from "@/config/navigation";
 import SectionHeader from "@/components/ui/SectionHeader.astro";
+import { getSection } from "@/utils/navigation";
 
 interface Props {
   title: string;
@@ -12,11 +12,7 @@ interface Props {
 
 const { title, description, sectionBase } = Astro.props as Props;
 
-const section = navSections.find((section) => section.base === sectionBase);
-
-if (!section) {
-  throw new Error(`Секция "${sectionBase}" не найдена.`);
-}
+const section = getSection(sectionBase);
 ---
 
 <Layout title={title} description={description}>

@@ -1,0 +1,21 @@
+---
+import PageLayout from "@/layouts/PageLayout.astro";
+import { getSection } from "@/utils/navigation";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (() => {
+  const section = getSection("/schedule");
+  return section.tabs.map((tab) => ({ params: { type: tab.slug } }));
+}) satisfies GetStaticPaths;
+
+const { type } = Astro.params;
+const section = getSection("/schedule");
+const tab = section.tabs.find((t) => t.slug === type);
+if (!tab) {
+  throw new Error(`Вкладка "${type}" не найдена.`);
+}
+---
+
+<PageLayout title={tab.label} description="123" sectionBase="/schedule">
+  <p>1</p>
+</PageLayout>
