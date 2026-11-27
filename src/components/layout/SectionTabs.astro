@@ -14,11 +14,16 @@ const { section, ariaLabel, class: className } = Astro.props as Props;
 const pathname = Astro.url.pathname;
 
 const baseStyle =
-  "focus-ring rounded px-4 py-2 text-sm font-semibold whitespace-nowrap";
+  "focus-ring block rounded-lg px-4 py-2 text-sm font-semibold whitespace-nowrap transition-colors";
 ---
 
-<nav aria-label={ariaLabel}>
-  <ul class={cn("flex gap-2 overflow-x-auto p-1", className)}>
+<nav aria-label={ariaLabel} class="-m-1.5">
+  <ul
+    class={cn(
+      "flex gap-2 overflow-x-auto flex-nowrap lg:overflow-visible lg:flex-wrap p-1.5",
+      className,
+    )}
+  >
     {
       section.tabs.map((tabItem) => {
         const href = getTabHref(section, tabItem);
@@ -31,7 +36,7 @@ const baseStyle =
                 baseStyle,
                 isActive
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-foreground",
+                  : "bg-secondary text-link-menu hover:text-foreground",
               )}
               aria-current={isActive ? "page" : undefined}
             >
