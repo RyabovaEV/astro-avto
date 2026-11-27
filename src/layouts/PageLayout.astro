@@ -1,0 +1,39 @@
+---
+import SectionTabs from "@/components/layout/SectionTabs.astro";
+import Layout from "./Layout.astro";
+import { navSections } from "@/config/navigation";
+import SectionHeader from "@/components/ui/SectionHeader.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  sectionBase: string;
+}
+
+const { title, description, sectionBase } = Astro.props as Props;
+
+const section = navSections.find((section) => section.base === sectionBase);
+
+if (!section) {
+  throw new Error(`Секция "${sectionBase}" не найдена.`);
+}
+---
+
+<Layout title={title} description={description}>
+  <div class="container">
+    <SectionHeader
+      title={title}
+      description={description}
+      level={1}
+      id={sectionBase + "-title"}
+    />
+    <SectionTabs
+      section={section}
+      ariaLabel={`Навигация по разделу ${section.label}`}
+      class="mt-6"
+    />
+  </div>
+  <div class="container mt-8 sm:mt-16">
+    <slot />
+  </div>
+</Layout>
