@@ -1,3 +1,3 @@
 export const scheduleMeta: { upcomingValidFrom: string | null } = {
-  upcomingValidFrom: "2026-10-01",
+  upcomingValidFrom: "2026-12-01",
 };
