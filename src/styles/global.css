@@ -128,6 +128,13 @@
   }
 }
 
+@utility container {
+  margin-inline: auto;
+  padding-inline: --spacing(4);
+  max-width: 90rem;
+  width: 100%;
+}
+
 @layer components {
   .focus-ring {
     @apply focus-visible:outline-primary focus-visible:outline-2 focus-visible:outline-offset-2;
@@ -141,6 +148,7 @@
 
   html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
   }
 
   body {
